@@ -1,20 +1,20 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sinduja Vasudevan | Analog Design Portfolio</title>
+    <title>Sindu Vasudevan | Analog Design Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-body: #f3f0f8;        
+            --bg-body: #f3f0f8;
             --bg-card: #ffffff;
-            --primary-text: #2d1b4e;   
-            --secondary-text: #6c5ce7; 
+            --primary-text: #2d1b4e;
+            --secondary-text: #6c5ce7;
             --muted-text: #636e72;
-            --sidebar-bg: #2d1b4e;     
+            --sidebar-bg: #2d1b4e;
             --sidebar-text: #f3f0f8;
             --shadow: 0 10px 30px -10px rgba(45, 27, 78, 0.1);
         }
@@ -60,7 +60,7 @@
 
         .profile-header h3 {
             font-weight: 300;
-            color: #a29bfe; 
+            color: #a29bfe;
             margin-top: 0;
             letter-spacing: 1px;
             text-transform: uppercase;
@@ -85,8 +85,10 @@
             gap: 10px;
         }
 
-        .contact-link:hover { opacity: 1; color: #a29bfe; }
-        .sidebar-footer { font-size: 0.8rem; opacity: 0.5; }
+        .contact-link:hover {
+            opacity: 1;
+            color: #a29bfe;
+        }
 
         /* Main Content */
         .main-content {
@@ -125,16 +127,24 @@
             align-items: center;
             gap: 10px;
         }
-        
+
         /* YouTube Featured Card */
         .yt-card {
             background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
             color: white;
             border: none;
         }
-        .yt-card h3 { color: white; margin-top: 0; font-size: 1.8rem; }
-        .yt-card p { color: rgba(255,255,255,0.9); }
-        
+
+        .yt-card h3 {
+            color: white;
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+
+        .yt-card p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
         .yt-btn {
             background: white;
             color: var(--secondary-text);
@@ -147,7 +157,10 @@
             transition: transform 0.2s;
             font-size: 0.9rem;
         }
-        .yt-btn:hover { transform: scale(1.05); }
+
+        .yt-btn:hover {
+            transform: scale(1.05);
+        }
 
         /* Video Grid Styles */
         .video-section-title {
@@ -156,7 +169,7 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             opacity: 0.9;
-            border-bottom: 1px solid rgba(255,255,255,0.3);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
             padding-bottom: 10px;
             margin-bottom: 15px;
         }
@@ -168,7 +181,7 @@
         }
 
         .video-item {
-            background: rgba(0,0,0,0.2);
+            background: rgba(0, 0, 0, 0.2);
             border-radius: 8px;
             overflow: hidden;
             transition: transform 0.3s ease;
@@ -180,12 +193,13 @@
 
         .video-item:hover {
             transform: translateY(-5px);
-            background: rgba(0,0,0,0.3);
+            background: rgba(0, 0, 0, 0.3);
         }
 
         .thumbnail-wrapper {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            padding-bottom: 56.25%;
+            /* 16:9 Aspect Ratio */
             height: 0;
             overflow: hidden;
         }
@@ -204,7 +218,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background: rgba(0,0,0,0.6);
+            background: rgba(0, 0, 0, 0.6);
             border-radius: 50%;
             width: 40px;
             height: 40px;
@@ -227,17 +241,67 @@
         }
 
         /* Experience Items */
-        .exp-item { margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
-        .exp-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-        .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 8px; }
-        .exp-role { font-size: 1.2rem; font-weight: 700; color: var(--primary-text); }
-        .exp-company { color: var(--secondary-text); font-weight: 600; }
-        .exp-meta { font-size: 0.9rem; color: var(--muted-text); font-style: italic; }
-        ul.details-list { padding-left: 20px; margin: 10px 0; }
-        ul.details-list li { margin-bottom: 8px; color: #4a4a4a; }
+        .exp-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .exp-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+
+        .exp-role {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-text);
+        }
+
+        .exp-company {
+            color: var(--secondary-text);
+            font-weight: 600;
+        }
+
+        .exp-meta {
+            font-size: 0.9rem;
+            color: var(--muted-text);
+            font-style: italic;
+        }
+
+        .exp-meta-location {
+            font-style: normal;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        ul.details-list {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        ul.details-list li {
+            margin-bottom: 8px;
+            color: #4a4a4a;
+        }
 
         /* Skills Tags */
-        .skills-container { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
         .skill-pill {
             background: rgba(108, 92, 231, 0.1);
             color: var(--secondary-text);
@@ -248,13 +312,43 @@
         }
 
         @media (max-width: 850px) {
-            .app-layout { grid-template-columns: 1fr; }
-            .sidebar { height: auto; position: relative; padding: 30px; text-align: center; }
-            .contact-links { align-items: center; }
-            .main-content { padding: 30px 20px; }
+            .app-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                height: auto;
+                position: relative;
+                padding: 30px;
+                text-align: center;
+            }
+
+            .contact-links {
+                align-items: center;
+            }
+
+            .main-content {
+                padding: 30px 20px;
+            }
+
+            .exp-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .exp-meta {
+                width: 100%;
+                margin-top: 8px;
+            }
+
+            .exp-meta-location {
+                text-align: left;
+                margin-top: 4px;
+            }
         }
     </style>
 </head>
+
 <body>
     <div id="app">
         <div class="app-layout">
@@ -265,7 +359,7 @@
                         <h3>Analog & Mixed Signal Engineer</h3>
                         <p style="opacity: 0.8; font-size: 0.9rem;">{{ profile.location }}</p>
                     </div>
-                    
+
                     <div class="contact-links">
                         <a :href="'mailto:' + profile.email" class="contact-link">
                             <span>✉</span> {{ profile.email }}
@@ -278,35 +372,31 @@
                         </a>
                     </div>
                 </div>
-                <div class="sidebar-footer">
-                    <p>© {{ new Date().getFullYear() }} {{ profile.name }}</p>
-                </div>
             </aside>
 
             <main class="main-content">
-                
+
                 <div class="card yt-card fade-in-up">
                     <div class="card-label">FEATURED</div>
                     <div style="display:flex; justify-content:space-between; align-items: flex-start; flex-wrap:wrap;">
                         <div>
-                            <h3>Circuit Scope</h3>
+                            <h3>CircuitScope</h3>
                             <p>Independent Technical Consultant & Content Creator</p>
                             <p style="max-width: 600px; font-size: 0.95rem;">
                                 I produce video tutorials explaining complex Analog and Mixed Signal design concepts.
                             </p>
                         </div>
-                        <a href="https://www.youtube.com/@CircuitScopevideo" target="_blank" class="yt-btn">▶ Visit Channel</a>
+                        <a href="https://www.youtube.com/@CircuitScopevideo" target="_blank" class="yt-btn">▶ Visit
+                            Channel</a>
                     </div>
 
                     <div class="video-section-title">Latest Tutorials</div>
                     <div class="video-grid">
-                        <a v-for="(video, index) in videos" 
-                           :key="index" 
-                           :href="'https://www.youtube.com/watch?v=' + video.id" 
-                           target="_blank" 
-                           class="video-item">
+                        <a v-for="(video, index) in videos" :key="index"
+                            :href="'https://www.youtube.com/watch?v=' + video.id" target="_blank" class="video-item">
                             <div class="thumbnail-wrapper">
-                                <img :src="'https://img.youtube.com/vi/' + video.id + '/mqdefault.jpg'" alt="Video Thumbnail">
+                                <img :src="'https://img.youtube.com/vi/' + video.id + '/mqdefault.jpg'"
+                                    alt="Video Thumbnail">
                                 <div class="play-overlay">▶</div>
                             </div>
                             <div class="video-title">{{ video.title }}</div>
@@ -329,7 +419,9 @@
                                 <div class="exp-role">{{ job.role }}</div>
                                 <div class="exp-company">{{ job.company }}</div>
                             </div>
-                            <div class="exp-meta">{{ job.dates }} | {{ job.location }}</div>
+                            <div class="exp-meta">{{ job.dates }} <div class="exp-meta-location">{{ job.location }}
+                                </div>
+                            </div>
                         </div>
                         <ul class="details-list">
                             <li v-for="(point, i) in job.description" :key="i">{{ point }}</li>
@@ -373,120 +465,121 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <script>
-      const app = Vue.createApp({
-        data() {
-          return {
-            profile: {
-                name: "Sinduja Vasudevan",
-                email: "srisindujav@gmail.com",
-                phone: "(979) 344-3904",
-                linkedin: "linkedin.com/in/srisindujav",
-                location: "San Francisco Bay Area, CA"
+        const app = Vue.createApp({
+            data() {
+                return {
+                    profile: {
+                        name: "Sindu Vasudevan",
+                        email: "srisindujav@gmail.com",
+                        phone: "(979) 344-3904",
+                        linkedin: "linkedin.com/in/srisindujav",
+                        location: "San Francisco Bay Area, CA"
+                    },
+                    // I have updated the IDs below.
+                    // You can rename the "title" fields to match the exact video names if you prefer.
+                    videos: [
+                        { title: "MOSFET Common Source Amplifier with Resistive load", id: "jd5ju9BzMbo" },
+                        { title: "MOSFET-Common Source Amplifier with finite ro (PART-2)", id: "DHP2yihhOGw" },
+                        { title: "Understanding the device physics of MOSFET", id: "HgT0NsmABck" }
+                    ],
+                    skills: [
+                        "Cadence Virtuoso",
+                        "Cadence Spectre (DRC, LVS, PEX)",
+                        "MATLAB (Eye Diagram, Channel Response)",
+                        "Python",
+                        "LTspice",
+                        "Analog Circuit Design",
+                        "PLL",
+                        "High-Speed Links"
+                    ],
+                    experience: [
+                        {
+                            company: "Advanced Micro Devices Inc (AMD)",
+                            role: "Analog and Mixed Signal Intern",
+                            location: "Santa Clara, CA",
+                            dates: "Aug 2024 – May 2025",
+                            description: [
+                                "Optimized DDR serial link performance by developing analytical models for analog and mixed-signal designs using MATLAB.",
+                                "Defined critical design specifications by analyzing link margin constraints and Signal Integrity factors.",
+                                "Enhanced analog design decision-making by conducting performance modeling and assessing the impact of channel characteristics."
+                            ]
+                        },
+                        {
+                            company: "Tube Investments of India (Murugappa Group)",
+                            role: "Sourcing and Supply Chain",
+                            location: "Chennai, India",
+                            dates: "April 2022 – May 2023",
+                            description: [
+                                "Optimized EV component procurement by sourcing key parts, including batteries and motors, ensuring reliable supply.",
+                                "Improved supplier selection and procurement efficiency by identifying and integrating new vendor catalogs."
+                            ]
+                        }
+                    ],
+                    projects: [
+                        {
+                            title: "3.2 GHz Fractional-N Frequency Synthesizer",
+                            tech: "90nm Technology",
+                            details: [
+                                "Designed a 3.2 GHz Fractional-N PLL frequency synthesizer incorporating PFD, optimized charge pump, LC VCO, and loop filter.",
+                                "Achieved VCO phase noise <-111 dBc/Hz @ 1MHz offset and wide VCO tuning range (3.03-3.4 GHz)."
+                            ]
+                        },
+                        {
+                            title: "Fully Differential Two-Stage Op-Amp Design",
+                            tech: "180nm Technology",
+                            details: [
+                                "Designed a fully differential two-stage Miller Op-Amp with CMFB using an NMOS input stage.",
+                                "Met specifications including 63dB DC gain, 179MHz GBW, and 77V/µs Slew Rate."
+                            ]
+                        },
+                        {
+                            title: "High-Efficiency Class-D Audio Amplifier",
+                            tech: "180nm Technology",
+                            details: [
+                                "Designed a 2W Class-D switching power amplifier implementing core blocks at the transistor level.",
+                                "Achieved THD of -82dB, SNDR of 67dB, and 94% peak power efficiency."
+                            ]
+                        },
+                        {
+                            title: "Voltage-Mode Transmitter Design",
+                            tech: "90nm Technology",
+                            details: [
+                                "Designed a voltage-mode transmitter with 3-tap FIR equalization achieving 10Gbps over B1 and C4 channels.",
+                                "Achieved BER ≤ 10^-12 with 0.3UI timing margin and 20mVppd receiver sensitivity."
+                            ]
+                        }
+                    ],
+                    education: [
+                        {
+                            school: "Texas A&M University",
+                            degree: "Master of Science in Electrical Engineering",
+                            gpa: "3.5/4.0",
+                            dates: "August 2023 – May 2025",
+                            coursework: "Analog Circuit Design, PLL, High-Speed Links Circuits and Systems"
+                        },
+                        {
+                            school: "Anna University",
+                            degree: "Bachelor of Engineering in Electrical and Electronics",
+                            gpa: "8.64/10",
+                            dates: "July 2017 – July 2021",
+                            coursework: "Network Analysis, Control Systems, Electronic circuits"
+                        }
+                    ]
+                }
             },
-            // I have updated the IDs below.
-            // You can rename the "title" fields to match the exact video names if you prefer.
-            videos: [
-                { title: "MOSFET Common Source Amplifier with Resistive load", id: "jd5ju9BzMbo" }, 
-                { title: "MOSFET-Common Source Amplifier with finite ro (PART-2)", id: "DHP2yihhOGw" }, 
-                { title: "Understanding the device physics of MOSFET", id: "HgT0NsmABck" }
-            ],
-            skills: [
-                "Cadence Virtuoso", 
-                "Cadence Spectre (DRC, LVS, PEX)", 
-                "MATLAB (Eye Diagram, Channel Response)", 
-                "Python",
-                "LTspice",
-                "Analog Circuit Design",
-                "PLL",
-                "High-Speed Links"
-            ],
-            experience: [
-                {
-                    company: "Advanced Micro Devices Inc (AMD)",
-                    role: "Analog and Mixed Signal Intern",
-                    location: "Santa Clara, CA",
-                    dates: "Aug 2024 – May 2025",
-                    description: [
-                        "Optimized DDR serial link performance by developing analytical models for analog and mixed-signal designs using MATLAB.",
-                        "Defined critical design specifications by analyzing link margin constraints and Signal Integrity factors.",
-                        "Enhanced analog design decision-making by conducting performance modeling and assessing the impact of channel characteristics."
-                    ]
-                },
-                {
-                    company: "Tube Investments of India (Murugappa Group)",
-                    role: "Sourcing and Supply Chain",
-                    location: "Chennai, India",
-                    dates: "April 2022 – May 2023",
-                    description: [
-                        "Optimized EV component procurement by sourcing key parts, including batteries and motors, ensuring reliable supply.",
-                        "Improved supplier selection and procurement efficiency by identifying and integrating new vendor catalogs."
-                    ]
-                }
-            ],
-            projects: [
-                {
-                    title: "3.2 GHz Fractional-N Frequency Synthesizer",
-                    tech: "90nm Technology",
-                    details: [
-                        "Designed a 3.2 GHz Fractional-N PLL frequency synthesizer incorporating PFD, optimized charge pump, LC VCO, and loop filter.",
-                        "Achieved VCO phase noise <-111 dBc/Hz @ 1MHz offset and wide VCO tuning range (3.03-3.4 GHz)."
-                    ]
-                },
-                {
-                    title: "Fully Differential Two-Stage Op-Amp Design",
-                    tech: "180nm Technology",
-                    details: [
-                        "Designed a fully differential two-stage Miller Op-Amp with CMFB using an NMOS input stage.",
-                        "Met specifications including 63dB DC gain, 179MHz GBW, and 77V/µs Slew Rate."
-                    ]
-                },
-                {
-                    title: "High-Efficiency Class-D Audio Amplifier",
-                    tech: "180nm Technology",
-                    details: [
-                        "Designed a 2W Class-D switching power amplifier implementing core blocks at the transistor level.",
-                        "Achieved THD of -82dB, SNDR of 67dB, and 94% peak power efficiency."
-                    ]
-                },
-                {
-                    title: "Voltage-Mode Transmitter Design",
-                    tech: "90nm Technology",
-                    details: [
-                        "Designed a voltage-mode transmitter with 3-tap FIR equalization achieving 10Gbps over B1 and C4 channels.",
-                        "Achieved BER ≤ 10^-12 with 0.3UI timing margin and 20mVppd receiver sensitivity."
-                    ]
-                }
-            ],
-            education: [
-                {
-                    school: "Texas A&M University",
-                    degree: "Master of Science in Electrical Engineering",
-                    gpa: "3.5/4.0",
-                    dates: "August 2023 – May 2025",
-                    coursework: "Analog Circuit Design, PLL, High-Speed Links Circuits and Systems"
-                },
-                {
-                    school: "Anna University",
-                    degree: "Bachelor of Engineering in Electrical and Electronics",
-                    gpa: "8.64/10",
-                    dates: "July 2017 – July 2021",
-                    coursework: "Network Analysis, Control Systems, Electronic circuits"
-                }
-            ]
-          }
-        },
-        mounted() {
-            // GSAP Animations
-            const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-            tl.from(".sidebar", { x: -50, opacity: 0, duration: 1 })
-              .from(".profile-header", { y: 20, opacity: 0, duration: 0.6 }, "-=0.5")
-              .from(".contact-link", { x: -20, opacity: 0, stagger: 0.1 }, "-=0.3")
-              .from(".fade-in-up", { 
-                  y: 60, opacity: 0, duration: 0.8, stagger: 0.15, clearProps: "all" 
-              }, "-=0.5");
-        }
-      })
-     app.mount('#app')
+            mounted() {
+                // GSAP Animations
+                const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+                tl.from(".sidebar", { x: -50, opacity: 0, duration: 1 })
+                    .from(".profile-header", { y: 20, opacity: 0, duration: 0.6 }, "-=0.5")
+                    .from(".contact-link", { x: -20, opacity: 0, stagger: 0.1 }, "-=0.3")
+                    .from(".fade-in-up", {
+                        y: 60, opacity: 0, duration: 0.8, stagger: 0.15, clearProps: "all"
+                    }, "-=0.5");
+            }
+        })
+        app.mount('#app')
     </script>
 </body>
+
 </html>
